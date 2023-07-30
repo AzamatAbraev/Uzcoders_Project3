@@ -1,0 +1,57 @@
+@import url(../_global.scss);
+footer {
+  padding: 40px;
+}
+
+.container {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.container .footer-texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container .footer-texts div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.container .footer-texts div h5 {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "montserrant";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+.container .footer-texts div p {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "montsrrant";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.25px;
+}
+.container .footer-texts div img {
+  width: 96px;
+  height: 96px;
+}
+@media (max-width: 1250px) {
+  .container .footer-texts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .container .footer-texts {
+    grid-template-columns: 1fr;
+  }
+}
