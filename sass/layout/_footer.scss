@@ -1,18 +1,15 @@
-@import url(../_global.scss);
+@use "../global";
 
-
-.container{
+.container {
   width: 1190px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 
-  .footer-texts{
+  .footer-texts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
-
-    div{
+    div {
       display: flex;
       flex-direction: column;
       row-gap: 20px;
