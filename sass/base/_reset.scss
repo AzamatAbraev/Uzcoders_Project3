@@ -1,4 +1,4 @@
-@use "../base/typography";
+@use "./typography" as typo ;
 
 * {
   margin: 0;
@@ -19,9 +19,8 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-  border: none;
+body {
+  font-family: typo.$font-family ;
 }
 
 input:focus {
