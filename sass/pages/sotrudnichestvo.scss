@@ -1,0 +1,86 @@
+@use "../global";
+
+main {
+  margin-top: 216.19px;
+}
+
+.home {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+  }
+
+  &__info__address {
+    p {
+      text-align: start;
+      @media (max-width: 500px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 39px;
+  }
+
+  &__btn {
+    display: flex !important;
+    padding: 13px 26px !important;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: #000000;
+      color: #fff;
+    }
+  }
+
+  &__email {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .home__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .home__info__title {
+    width: 100%;
+  }
+
+  .home__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .home__info__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 11px;
+  }
+
+  .home__info__number,
+  .home__info__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__info__title {
+    text-align: center;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 350px) {
+  .home__info__title {
+    font-size: 25px;
+  }
+}

@@ -1,26 +1,27 @@
-@use "../base/typography" as typo ;
+@use "../base/typography" as typo;
 @import url(../_global.scss);
 
-
-nav{
+nav {
   position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-
-.overlay{
+.overlay {
   display: none;
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   z-index: 1000;
   transition: 1s;
 
-  .overlay-content{
+  .overlay-content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -29,13 +30,12 @@ nav{
     align-items: center;
     row-gap: 20px;
 
-    a{
+    a {
       color: white;
       font-family: typo.$font-family;
     }
   }
 }
-
 
 .overlay .closebtn {
   position: absolute;
@@ -45,100 +45,91 @@ nav{
   font-size: 60px;
 }
 
-
-.navbar-laung{
-  background-color: #0D0D0D;
+.navbar-laung {
+  background-color: #0d0d0d;
   transition: 1s;
 
-  .launguage{
-    padding:  15px 20px;
-    a{
-      color: rgba(255, 255, 255, 0.30); 
-      font-family: typo.$font-family;  
+  .launguage {
+    padding: 15px 20px;
+    a {
+      color: rgba(255, 255, 255, 0.3);
+      font-family: typo.$font-family;
     }
-    .a-active{
+    .a-active {
       color: white;
     }
   }
 }
 
-.navbar-menu{
+.navbar-menu {
   background-color: white;
 }
 
-.container{
+.container {
   max-width: 1190px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
 
-
-  .nav-menu{
+  .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 20px;
     transition: 1s;
-    h4{
-      color: var(--black, #0D0D0D);
+    h4 {
+      color: #0d0d0d;
       font-variant-numeric: lining-nums proportional-nums;
-      font-family: "Poppins";
       font-size: 23px;
-      font-style: normal;
       font-weight: 700;
-      line-height: 140%; /* 32.2px */
+      line-height: 140%;
       letter-spacing: 0.4px;
     }
-    
-    a{
+
+    a {
       font-family: typo.$font-family;
     }
-  
-    .nav-links{
+
+    .nav-links {
       display: flex;
       gap: 24px;
     }
-  
+
     .nav-btns {
       display: flex;
       align-items: center;
       gap: 20px;
-      .nav-btn-1{
+      .nav-btn-1 {
         padding: 4px 8px;
         border-radius: 4px;
         background: var(--black-5, rgba(0, 0, 0, 0.05));
         transition: 1s;
         font-family: "Montserrat";
-  
-        &:hover{
-          background: var(--yellow, #FFC000);
+
+        &:hover {
+          background: var(--yellow, #ffc000);
         }
       }
-      .nav-btn-2{
+      .nav-btn-2 {
         padding: 0;
         background: none;
         border: none;
       }
     }
-    @media(max-width:900px){
+    @media (max-width: 900px) {
       display: none;
     }
   }
 
-  >button{
+  button {
     margin-top: 20px;
     display: none;
     padding: 5px;
-    img{
+    img {
       width: 40px;
     }
-    @media(max-width:900px){
+    @media (max-width: 900px) {
       display: block;
     }
   }
-
 }
-
-
-
-
