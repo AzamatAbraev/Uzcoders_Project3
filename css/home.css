@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
+=======
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url(../_global.scss);
@@ -53,6 +71,18 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+=======
+>>>>>>> f75cd815da9b9df55f3083ca9fc5fe4b3ab64aa4
 body {
   font-family: "Montserrat";
 }
@@ -69,6 +99,11 @@ input:focus, textarea:focus {
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
+h1 {
+  color: aqua;
+  background-color: bisque;
+=======
 nav {
   position: fixed;
   width: 100%;
@@ -252,4 +287,5 @@ footer {
 
 main {
   padding-top: 140px;
+>>>>>>> f75cd815da9b9df55f3083ca9fc5fe4b3ab64aa4
 }
