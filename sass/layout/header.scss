@@ -1,4 +1,5 @@
-@import url(../_global.scss);;
+@use "../base/typography" as typo ;
+@import url(../_global.scss);
 
 
 nav{
@@ -30,6 +31,7 @@ nav{
 
     a{
       color: white;
+      font-family: typo.$font-family;
     }
   }
 }
@@ -51,7 +53,8 @@ nav{
   .launguage{
     padding:  15px 20px;
     a{
-      color: rgba(255, 255, 255, 0.30);   
+      color: rgba(255, 255, 255, 0.30); 
+      font-family: typo.$font-family;  
     }
     .a-active{
       color: white;
@@ -86,6 +89,10 @@ nav{
       line-height: 140%; /* 32.2px */
       letter-spacing: 0.4px;
     }
+    
+    a{
+      font-family: typo.$font-family;
+    }
   
     .nav-links{
       display: flex;
@@ -101,6 +108,7 @@ nav{
         border-radius: 4px;
         background: var(--black-5, rgba(0, 0, 0, 0.05));
         transition: 1s;
+        font-family: "Montserrat";
   
         &:hover{
           background: var(--yellow, #FFC000);

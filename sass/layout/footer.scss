@@ -1,5 +1,5 @@
-@import url(../_global.scss); 
-
+@use "../base/typography" as typo;
+@import url(../_global.scss);
 
 footer{
   padding: 40px;
@@ -24,10 +24,8 @@ footer{
       margin-bottom: 30px;
       h5{
         color: var(--black, #000);
-        font-variant-numeric: lining-nums proportional-nums;
-        font-family: var.$font-family;
         font-size: 14px;
-        font-style: normal;
+        font-family: typo.$font-family;
         font-weight: 600;
         line-height: 140%; /* 19.6px */
         letter-spacing: 0.75px;
@@ -36,10 +34,8 @@ footer{
 
       p{
         color: var(--black, #000);
-        font-variant-numeric: lining-nums proportional-nums;
-        font-family: var.$font-family;
         font-size: 14px;
-        font-style: normal;
+        font-family: typo.$font-family;
         font-weight: 400;
         line-height: 160%; /* 22.4px */
         letter-spacing: 0.25px;

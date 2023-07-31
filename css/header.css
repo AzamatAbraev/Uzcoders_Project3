@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(../_global.scss);
 nav {
   position: fixed;
@@ -27,6 +28,7 @@ nav {
 }
 .overlay .overlay-content a {
   color: white;
+  font-family: "Montserrat";
 }
 
 .overlay .closebtn {
@@ -46,6 +48,7 @@ nav {
 }
 .navbar-laung .launguage a {
   color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat";
 }
 .navbar-laung .launguage .a-active {
   color: white;
@@ -78,6 +81,9 @@ nav {
   line-height: 140%; /* 32.2px */
   letter-spacing: 0.4px;
 }
+.container .nav-menu a {
+  font-family: "Montserrat";
+}
 .container .nav-menu .nav-links {
   display: flex;
   gap: 24px;
@@ -92,6 +98,7 @@ nav {
   border-radius: 4px;
   background: var(--black-5, rgba(0, 0, 0, 0.05));
   transition: 1s;
+  font-family: "Montserrat";
 }
 .container .nav-menu .nav-btns .nav-btn-1:hover {
   background: var(--yellow, #FFC000);

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(../_global.scss);
 footer {
   padding: 40px;
@@ -22,10 +23,8 @@ footer {
 }
 .container .footer-texts div h5 {
   color: var(--black, #000);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: "montserrant";
   font-size: 14px;
-  font-style: normal;
+  font-family: "Montserrat";
   font-weight: 600;
   line-height: 140%; /* 19.6px */
   letter-spacing: 0.75px;
@@ -33,10 +32,8 @@ footer {
 }
 .container .footer-texts div p {
   color: var(--black, #000);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: "montsrrant";
   font-size: 14px;
-  font-style: normal;
+  font-family: "Montserrat";
   font-weight: 400;
   line-height: 160%; /* 22.4px */
   letter-spacing: 0.25px;
