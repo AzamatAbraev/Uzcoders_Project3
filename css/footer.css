@@ -22,16 +22,16 @@ footer {
   margin-bottom: 30px;
 }
 .container .footer-texts div h5 {
-  color: var(--black, #000);
+  color: black;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 600;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   letter-spacing: 0.75px;
   text-transform: uppercase;
 }
 .container .footer-texts div p {
-  color: var(--black, #000);
+  color: black;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 400;

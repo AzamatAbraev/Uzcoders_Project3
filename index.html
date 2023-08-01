@@ -1,85 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/tailwind.css">
-  <link rel="stylesheet" href="css/home.min.css">
-</head>
-<body>
-  <header>
-    <nav >
-      <div id="launguage" class="navbar-laung">
-        <div class="container">
-          <div class="launguage">
-            <a href="#" class="a-active">RU</a>
-            <a href="#">UZ</a>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-menu">
-        <div class="container">
-          <div id="navbar" class="nav-menu">
-            <h4>MILANDI</h4>
-            <div class="nav-links">
-              <a href="#">Главная</a>
-              <a href="#">О нас</a>
-              <a href="#">Категории</a>
-              <a href="#">Сотрудничество</a>
-            </div>
-            <div class="nav-btns">
-              <button class="nav-btn-1">Войти</button>
-              <button class="nav-btn-1">Зарегистрироваться</button>
-              <button class="nav-btn-2"><img src="../images/header/shop.svg" alt=""></button>
-            </div>
-          </div>
-          <button onclick="openNav()"><img src="../images/header/" alt=""><img src="../images/header/menu-hamburger.png" alt=""></button>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer-texts">
-        <div>
-          <h5>про imperia</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-            pretium aenean dignissim sit cursus dictumst adipiscing nunc.
-          </p>
-          <img src="../images/header/footer-logo.svg" alt="">
-        </div>
-        <div>
-          <h5>контакты</h5>
-          <p>+998 90 958 78 87</p>
-          <p>support@fonon.uz</p>
-          <h5>рабочее время</h5>
-          <p>По будням 9:00 to 18:00</p>
-          <p>В выходные 11:00 to 18:00</p>
-        </div>
-        <div>
-          <h5>Меню</h5>
-          <p>Главная</p>
-          <p>О нас</p>
-          <p>Категории</p>
-          <p>Сотрудничество</p>
-        </div>
-        <div>
-          <h5>категории</h5>
-          <p>Женская одежда</p>
-          <p>Мужская одежда</p>
-          <p>Детская одежда</p>
-          <p>Обувь</p>
-          <p>Сумки</p>
-          <p>Аксесуары</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/home.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Категории</a>
+        <a href="#">Сотрудничество</a>
       </div>
     </div>
-  </footer>
-</body>
+    <header>
+      <nav>
+        <div id="launguage" class="navbar-laung">
+          <div class="container">
+            <div class="launguage">
+              <a href="#" class="a-active">RU</a>
+              <a href="#">UZ</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="container">
+            <div id="navbar" class="nav-menu">
+              <h4>MILANDI</h4>
+              <div class="nav-links">
+                <a href="#">Главная</a>
+                <a href="#">О нас</a>
+                <a href="#">Категории</a>
+                <a href="#">Сотрудничество</a>
+              </div>
+              <div class="nav-btns">
+                <button class="nav-btn-1">Войти</button>
+                <button class="nav-btn-1">Зарегистрироваться</button>
+                <button class="nav-btn-2">
+                  <img src="../images/header/shop.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <button onclick="openNav()">
+              <img src="../images/header/" alt="" /><img
+                src="../images/header/menu-hamburger.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="home">
+        <div class="home-img">
+          <div class="container">
+            <div class="home-img-container">
+              <img src="images/MacBook-10/home-img.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="home-text">
+          <div class="container">
+            <div class="home-text-container">
+              <h4>Быстрый и удобный шоппинг, не выходя из дома.</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Convallis lectus odio vitae, duis nec ut velit, fermentum. Diam
+                sollicitudin arcu euismod morbi. Adipiscing bibendum elementum,
+                fermentum amet quis erat.
+              </p>
+              <a href="#">Все товары</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-res-text">
+        <div class="container">
+          <div class="home-text-container">
+            <h4>Быстрый и удобный шоппинг.</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin
+              arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet
+              quis erat.
+            </p>
+            <a href="#">Все товары</a>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="container">
+          <div class="about-us">
+            <h4>Наши преимущества</h4>
+            <div class="about-divs">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img src="images/MacBook-10/stars-icon.svg" alt="" />
+                  <p>Лучший сервис</p>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/truck-icon.svg" alt="" />
+                  <p>Экспресс доставка</p>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/like-icon.svg" alt="" />
+                  <p>Лучшее качество в стране</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clothes-cards">
+        <div class="container">
+          <div class="clothes-container">
+            <h4>Лучшие товары</h4>
+            <div class="clothes-all-cards">
+              <div class="owl-carousel owl-theme carousel-2">
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-1.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-2.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-3.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-4.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="species">
+        <div class="container">
+          <h4>Категории</h4>
+          <div class="species-container">
+            <div class="owl-carousel owl-theme carousel-3">
+              <div class="item">
+                <div class="species-cards">
+                  <img src="images/MacBook-10/etik.svg" alt="" />
+                </div>
+                <div class="species-card-hover">
+                  <h5>Женская обувь</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="species-cards">
+                  <img src="images/MacBook-10/sumka.svg" alt="" />
+                </div>
+                <div class="species-card-hover">
+                  <h5>Женская обувь</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="species-cards">
+                  <img src="images/MacBook-10/shapka.svg" alt="" />
+                </div>
+                <div class="species-card-hover">
+                  <h5>Женская обувь</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="species-cards">
+                  <img src="images/MacBook-10/etik.svg" alt="" />
+                </div>
+                <div class="species-card-hover">
+                  <h5>Женская обувь</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="download">
+        <div class="container">
+          <div class="download-container">
+            <div class="download-img">
+              <img src="images/MacBook-10/download-img.svg" alt="" />
+            </div>
+            <div class="download-text">
+              <h4>Скачай приложение и получай призы каждый день</h4>
+              <p>
+                Скачав наш приложение вы получаете возможность играть в призовые
+                игры каждый день и выигровать разного рода подарки для себя. В
+                нашем приложении призовые игры проходят аблолютно каждый день и
+                всё это совершенно бесплатно.
+              </p>
+              <div class="socials-download">
+                <img src="images/MacBook-10/app-store.svg" alt="" />
+                <img src="images/MacBook-10/play-market.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clothes-cards">
+        <div class="container">
+          <div class="clothes-container">
+            <h4>Лучшие товары</h4>
+            <div class="clothes-all-cards">
+              <div class="owl-carousel owl-theme carousel-2">
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-1.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-2.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-3.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/MacBook-10/clothes-card-4.svg" alt="" />
+                  <div class="clothes-card-text">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit sed odio sed nascetur.
+                    </p>
+                    <img src="images/MacBook-10/stars-clothes.svg" alt="" />
+                    <button class="card-btn">Добавить в корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imperia">
+        <div class="container-imperia">
+          <div class="container-img">
+            <img src="images/MacBook-10/imperia-img.svg" alt="" />
+          </div>
+          <div class="container-text">
+            <h4>Создай свой лук на все случаи жизни в “Imperia”</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              sollicitudin a cursus in. Vel sit donec semper magna dignissim.
+              Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel
+              egestas fermentum pellentesque sed vitae vel.
+            </p>
+            <div>
+              <button>начать покупки</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discount">
+        <div class="container">
+          <div class="discount-container">
+            <h4>Скидка 30% на первую покупку обслютно для всех</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-texts">
+          <div>
+            <h5>про imperia</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+            </p>
+            <img src="../images/header/footer-logo.svg" alt="" />
+          </div>
+          <div>
+            <h5>контакты</h5>
+            <p>+998 90 958 78 87</p>
+            <p>support@fonon.uz</p>
+            <h5>рабочее время</h5>
+            <p>По будням 9:00 to 18:00</p>
+            <p>В выходные 11:00 to 18:00</p>
+          </div>
+          <div>
+            <h5>Меню</h5>
+            <p>Главная</p>
+            <p>О нас</p>
+            <p>Категории</p>
+            <p>Сотрудничество</p>
+          </div>
+          <div>
+            <h5>категории</h5>
+            <p>Женская одежда</p>
+            <p>Мужская одежда</p>
+            <p>Детская одежда</p>
+            <p>Обувь</p>
+            <p>Сумки</p>
+            <p>Аксесуары</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/header.js"></script>
+    <script src="js/home.js"></script>
+  </body>
 </html>
