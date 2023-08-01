@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page</title>
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <link rel="stylesheet" href="../css/profile-page.min.css" />
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Категории</a>
+        <a href="#">Сотрудничество</a>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div id="launguage" class="navbar-laung">
+          <div class="container">
+            <div class="launguage">
+              <a href="#" class="a-active">RU</a>
+              <a href="#">UZ</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="container">
+            <div id="navbar" class="nav-menu">
+              <h4>MILANDI</h4>
+              <div class="nav-links">
+                <a href="../index.html">Главная</a>
+                <a href="macbook-11.html">О нас</a>
+                <a href="macbook-12.html">Категории</a>
+                <a href="sotrudnichestvo.html">Сотрудничество</a>
+              </div>
+              <div class="nav-btns">
+                <button class="nav-btn-1">Войти</button>
+                <button class="nav-btn-1">Зарегистрироваться</button>
+                <button class="nav-btn-2">
+                  <img src="../images/header/shop.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <button onclick="openNav()">
+              <img src="../images/header/" alt="" /><img
+                src="../images/header/menu-hamburger.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home bg-[#FAFAFA]">
+        <div class="container home__container">
+          <div class="home__image">
+            <img
+              class="w-[100%]"
+              src="../images/Profile-page/profilr-image.png"
+              alt="Profile Image"
+            />
+            <button
+              class="home__btn text-[16px] font-[700] leading-[140%] text-[#0D0D0D] w-[100%] bg-[#FFC000] mt-[16px]"
+            >
+              Изменить
+            </button>
+          </div>
+          <div class="home__form">
+            <div class="home__form__left">
+              <div class="input__box">
+                <label
+                  class="text-[#000] mb-[8px] text-[16px] font-[700] leading-[24px] lining-nums proportional-nums"
+                  for="full__name"
+                  >Имя и фамилия:</label
+                >
+                <input
+                  class="text-[##0D0D0D] text-[16px] font-[400] leading-[24px] lining-nums proportional-nums w-[100%] border-solid border-[1px] border-[#DBDEE7]"
+                  id="full__name"
+                  type="text"
+                  value="Александр Сергеевич"
+                />
+              </div>
+              <div class="input__box">
+                <label
+                  class="text-[#000] text-[16px] font-[700] leading-[24px] lining-nums proportional-nums"
+                  for="tell__number"
+                  >Номер телефона:</label
+                >
+                <input
+                  class="text-[##0D0D0D] text-[16px] font-[400] leading-[24px] lining-nums proportional-nums w-[100%] border-solid border-[1px] border-[#DBDEE7]"
+                  id="tell__number"
+                  type="text"
+                  value="+998 (93) 552-22-22"
+                />
+              </div>
+              <div class="input__box">
+                <label
+                  class="text-[#000] text-[16px] font-[700] leading-[24px] lining-nums proportional-nums"
+                  for="profile__password"
+                  >Пароль</label
+                >
+                <input
+                  class="text-[##0D0D0D] text-[16px] font-[400] leading-[24px] lining-nums proportional-nums w-[100%] border-solid border-[1px] border-[#DBDEE7]"
+                  id="profile__password"
+                  type="text"
+                  value="Александр Сергеевич"
+                />
+              </div>
+              <button
+                type="button"
+                class="form__change text-[#FFC000] text-[12px] font-[500] leading-[140%] lining-nums proportional-nums"
+                onclick="ClearFields();"
+              >
+                Изменить
+              </button>
+            </div>
+            <div class="home__form__right">
+              <div class="input__box">
+                <label
+                  class="text-[#000] text-[16px] font-[700] leading-[24px] lining-nums proportional-nums"
+                  for="adress"
+                  >Адрес</label
+                >
+                <input
+                  class="text-[##0D0D0D] text-[16px] font-[400] leading-[24px] lining-nums proportional-nums w-[100%] border-solid border-[1px] border-[#DBDEE7]"
+                  id="address"
+                  type="text"
+                  value="Ташкент, ул. Янги сергели, д-9, кв-30"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-texts">
+          <div>
+            <h5>про imperia</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+            </p>
+            <img src="../images/header/footer-logo.svg" alt="" />
+          </div>
+          <div>
+            <h5>контакты</h5>
+            <p>+998 90 958 78 87</p>
+            <p>support@fonon.uz</p>
+            <h5>рабочее время</h5>
+            <p>По будням 9:00 to 18:00</p>
+            <p>В выходные 11:00 to 18:00</p>
+          </div>
+          <div>
+            <h5>Меню</h5>
+            <a class="footer__link" href="../index.html">Главная</a>
+            <a class="footer__link" href="macbook-11.html">О нас</a>
+            <a class="footer__link" href="macbook-12.html">Категории</a>
+            <a class="footer__link" href="sotrudnichestvo.html"
+              >Сотрудничество</a
+            >
+          </div>
+          <div>
+            <h5>категории</h5>
+            <a class="footer__link" href="macbook-12.html">Женская одежда</a>
+            <a class="footer__link" href="macbook-14.html">Мужская одежда</a>
+            <a class="footer__link" href="macbook-13.html">Детская одежда</a>
+            <a class="footer__link" href="macbook-12.html">Обувь</a>
+            <a class="footer__link" href="macbook-12.html">Сумки</a>
+            <a class="footer__link" href="macbook-12.html">Аксесуары</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/header.js"></script>
+  <script src="../js/form.js"></script>
+</html>

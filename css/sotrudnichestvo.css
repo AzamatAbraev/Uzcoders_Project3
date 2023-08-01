@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 @import url(../_global.scss);
 @import url(../_global.scss);
 @font-face {
@@ -57,16 +58,8 @@ body {
   font-family: "Montserrat";
 }
 
-input:focus, textarea:focus {
+input:focus {
   outline: none;
-}
-
-.container {
-  max-width: 1190px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 nav {
@@ -183,16 +176,16 @@ nav {
     display: none;
   }
 }
-.container button {
+.container > button {
   margin-top: 20px;
   display: none;
   padding: 5px;
 }
-.container button img {
+.container > button img {
   width: 40px;
 }
 @media (max-width: 900px) {
-  .container button {
+  .container > button {
     display: block;
   }
 }
@@ -282,4 +275,44 @@ main {
 }
 .home__email {
   display: none;
+}
+
+@media (max-width: 992px) {
+  .home__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .home__info__title {
+    width: 100%;
+  }
+  .home__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home__info__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 11px;
+  }
+  .home__info__number,
+  .home__info__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__info__title {
+    text-align: center;
+    font-size: 34px;
+  }
+}
+@media (max-width: 350px) {
+  .home__info__title {
+    font-size: 25px;
+  }
 }
