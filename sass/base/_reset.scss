@@ -1,3 +1,5 @@
+@use "./typography" as typo;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +15,12 @@ ul {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 body {
-  * {
-    font-family: $font-family;
-  }
+  font-family: typo.$font-family;
 }
 
 

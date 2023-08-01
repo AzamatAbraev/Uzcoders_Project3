@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sotrudnichestvo</title>
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <link rel="stylesheet" href="../css/sotrudnichestvo.min.css" />
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Категории</a>
+        <a href="#">Сотрудничество</a>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div id="launguage" class="navbar-laung">
+          <div class="container">
+            <div class="launguage">
+              <a href="#" class="a-active">RU</a>
+              <a href="#">UZ</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="container">
+            <div id="navbar" class="nav-menu">
+              <h4>MILANDI</h4>
+              <div class="nav-links">
+                <a href="../index.html">Главная</a>
+                <a href="macbook-11.html">О нас</a>
+                <a href="macbook-12.html">Категории</a>
+                <a href="sotrudnichestvo.html">Сотрудничество</a>
+              </div>
+              <div class="nav-btns">
+                <button class="nav-btn-1">Войти</button>
+                <button class="nav-btn-1">Зарегистрироваться</button>
+                <button class="nav-btn-2">
+                  <img src="../images/header/shop.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <button onclick="openNav()">
+              <img src="../images/header/" alt="" /><img
+                src="../images/header/menu-hamburger.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home pb-20 pt-44 bg-[#FAFAFA]">
+        <div class="container home__container">
+          <div class="home__info">
+            <h1
+              class="text-[#000] text-[46px] font-[900] leading-[64px] mb-[102px] home__info__title"
+            >
+              Здравствуйте, оставьте заявку для сотрудничества
+            </h1>
+            <div class="home__info__bottom">
+              <div class="home__info__address home__email mb-[44px]">
+                <h4
+                  class="text-[#000] font-[700] leading-[34px] text-[20px] mb-[8px]"
+                >
+                  Email
+                </h4>
+                <p class="text-[#000] font-[400] leading-[32px] text-[18px]">
+                  hell@agency.com
+                </p>
+              </div>
+              <div class="home__info__number mb-[44px]">
+                <h4
+                  class="text-[#000] font-[700] leading-[34px] text-[20px] mb-[8px]"
+                >
+                  Phone
+                </h4>
+                <p class="text-[#000] font-[400] leading-[32px] text-[18px]">
+                  +1 848 493 944
+                </p>
+              </div>
+              <div class="home__info__address mb-[44px]">
+                <h4
+                  class="text-[#000] font-[700] leading-[34px] text-[20px] mb-[8px]"
+                >
+                  Address
+                </h4>
+                <p class="text-[#000] font-[400] leading-[32px] text-[18px]">
+                  508 Bridle Avenue Newnan, GA 30263
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="home__form">
+            <form>
+              <input
+                class="text-[#000] text-[18px] font-[400] leading-[32px] border-[#DBDEE7] pt-[14px] pb-[14px] pl-[24px] w-[100%] mb-[16px]"
+                type="text"
+                placeholder="Имя"
+                required
+              />
+              <input
+                class="text-[#000] text-[18px] font-[400] leading-[32px] border-[#DBDEE7] pt-[14px] pb-[14px] pl-[24px] w-[100%] mb-[16px]"
+                type="tel"
+                placeholder="Номер телефона"
+                required
+              />
+              <input
+                class="text-[#000] text-[18px] font-[400] leading-[32px] border-[#DBDEE7] pt-[14px] pb-[14px] pl-[24px] w-[100%] mb-[16px]"
+                type="text"
+                placeholder="Компания"
+                required
+              />
+              <textarea
+                class="home__review text-[#000] text-[18px] font-[400] leading-[32px] border-[#DBDEE7] pt-[14px] pb-[14px] pl-[24px] w-[100%] mb-[16px] h-[200px]"
+                placeholder="Коротко о вашей компании"
+              ></textarea>
+              <button
+                type="submit"
+                class="home__btn text-[20px] font-[700] leading-[34px] bg-[#FFC000] py-[13px] px-[26px] rounded-[6px]"
+              >
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-texts">
+          <div>
+            <h5>про imperia</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+            </p>
+            <img src="../images/header/footer-logo.svg" alt="" />
+          </div>
+          <div>
+            <h5>контакты</h5>
+            <p>+998 90 958 78 87</p>
+            <p>support@fonon.uz</p>
+            <h5>рабочее время</h5>
+            <p>По будням 9:00 to 18:00</p>
+            <p>В выходные 11:00 to 18:00</p>
+          </div>
+          <div>
+            <h5>Меню</h5>
+            <a class="footer__link" href="../index.html">Главная</a>
+            <a class="footer__link" href="macbook-11.html">О нас</a>
+            <a class="footer__link" href="macbook-12.html">Категории</a>
+            <a class="footer__link" href="sotrudnichestvo.html"
+              >Сотрудничество</a
+            >
+          </div>
+          <div>
+            <h5>категории</h5>
+            <a class="footer__link" href="macbook-12.html">Женская одежда</a>
+            <a class="footer__link" href="macbook-14.html">Мужская одежда</a>
+            <a class="footer__link" href="macbook-13.html">Детская одежда</a>
+            <a class="footer__link" href="macbook-12.html">Обувь</a>
+            <a class="footer__link" href="macbook-12.html">Сумки</a>
+            <a class="footer__link" href="macbook-12.html">Аксесуары</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
