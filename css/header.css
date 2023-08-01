@@ -1,9 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url(../_global.scss);
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Regular.ttf);
+}
 nav {
   position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .overlay {
@@ -40,7 +76,7 @@ nav {
 }
 
 .navbar-laung {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   transition: 1s;
 }
 .navbar-laung .launguage {
@@ -72,13 +108,11 @@ nav {
   transition: 1s;
 }
 .container .nav-menu h4 {
-  color: var(--black, #0D0D0D);
+  color: #0d0d0d;
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Poppins";
   font-size: 23px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 140%; /* 32.2px */
+  line-height: 140%;
   letter-spacing: 0.4px;
 }
 .container .nav-menu a {
@@ -101,7 +135,7 @@ nav {
   font-family: "Montserrat";
 }
 .container .nav-menu .nav-btns .nav-btn-1:hover {
-  background: var(--yellow, #FFC000);
+  background: var(--yellow, #ffc000);
 }
 .container .nav-menu .nav-btns .nav-btn-2 {
   padding: 0;
@@ -113,15 +147,16 @@ nav {
     display: none;
   }
 }
-.container > button {
+.container button {
+  margin-top: 20px;
   display: none;
   padding: 5px;
 }
-.container > button img {
+.container button img {
   width: 40px;
 }
 @media (max-width: 900px) {
-  .container > button {
+  .container button {
     display: block;
   }
 }

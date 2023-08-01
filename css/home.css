@@ -1,6 +1,57 @@
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url(../_global.scss);
 @import url(../_global.scss);
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +71,44 @@ a {
   text-decoration: none;
 }
 
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 body {
   font-family: "Montserrat";
 }
 
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+h1 {
+  color: aqua;
+  background-color: bisque;
+}
 nav {
   position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .overlay {
@@ -64,7 +145,7 @@ nav {
 }
 
 .navbar-laung {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   transition: 1s;
 }
 .navbar-laung .launguage {
@@ -96,13 +177,11 @@ nav {
   transition: 1s;
 }
 .container .nav-menu h4 {
-  color: var(--black, #0D0D0D);
+  color: #0d0d0d;
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Poppins";
   font-size: 23px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 140%; /* 32.2px */
+  line-height: 140%;
   letter-spacing: 0.4px;
 }
 .container .nav-menu a {
@@ -125,7 +204,7 @@ nav {
   font-family: "Montserrat";
 }
 .container .nav-menu .nav-btns .nav-btn-1:hover {
-  background: var(--yellow, #FFC000);
+  background: var(--yellow, #ffc000);
 }
 .container .nav-menu .nav-btns .nav-btn-2 {
   padding: 0;
@@ -138,14 +217,15 @@ nav {
   }
 }
 .container > button {
+  margin-top: 20px;
   display: none;
   padding: 5px;
 }
-.container > button img {
+.container button img {
   width: 40px;
 }
 @media (max-width: 900px) {
-  .container > button {
+  .container button {
     display: block;
   }
 }
@@ -172,7 +252,7 @@ footer {
   margin-bottom: 30px;
 }
 .container .footer-texts div h5 {
-  color: black;
+  color: var(--black, #000);
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -181,11 +261,11 @@ footer {
   text-transform: uppercase;
 }
 .container .footer-texts div p {
-  color: black;
+  color: var(--black, #000);
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 400;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
   letter-spacing: 0.25px;
 }
 .container .footer-texts div img {
@@ -208,413 +288,5 @@ footer {
 }
 
 main {
-  padding-top: 134px;
-  background-color: #F2F3F7;
-}
-@media (max-width: 900px) {
-  main {
-    padding-top: 110px;
-  }
-}
-
-.home {
-  background: linear-gradient(133deg, #E1AA00 0%, #FFC000 100%);
-  padding: 200px 0;
-  position: relative;
-}
-.home .home-img {
-  position: absolute;
-  right: 100px;
-  top: 0;
-  bottom: 0;
-}
-@media (max-width: 1150px) {
-  .home .home-img {
-    position: static;
-  }
-}
-.home .home-img .container {
-  height: 100%;
-}
-.home .home-img .home-img-container {
-  display: flex;
-  justify-content: end;
-  height: 100%;
-}
-.home .home-text {
-  background-color: black;
-  padding-top: 30px;
-  padding-bottom: 150px;
-}
-.home .home-text .home-text-container {
-  max-width: 588px;
-}
-.home .home-text .home-text-container h4 {
-  color: white;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-}
-.home .home-text .home-text-container p {
-  color: white;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.1px;
-  margin-top: 16px;
-}
-.home .home-text .home-text-container a {
-  color: #FFC000;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  margin-top: 24px;
-}
-@media (max-width: 1150px) {
-  .home .home-text {
-    display: none;
-  }
-}
-@media (max-width: 1150px) {
-  .home {
-    padding: 0;
-  }
-}
-
-.home-res-text {
-  display: none;
-  padding: 20px;
-}
-.home-res-text .home-text-container {
-  max-width: 588px;
-}
-.home-res-text .home-text-container h4 {
-  color: black;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-}
-.home-res-text .home-text-container p {
-  color: black;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.1px;
-  margin-top: 8px;
-}
-.home-res-text .home-text-container a {
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  margin-top: 16px;
-}
-@media (max-width: 1150px) {
-  .home-res-text {
-    display: block;
-  }
-}
-
-.about {
-  padding: 30px 0;
-}
-.about-us h4 {
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-  margin-bottom: 20px;
-}
-@media (max-width: 320px) {
-  .about-us h4 {
-    font-size: 30px;
-  }
-}
-.about-divs .item {
-  width: 294px;
-  height: 144px;
-  padding: 25px 0;
-  border-radius: 12px;
-  background: var(--tecxt-white, #FFF);
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.about-divs .item img {
-  width: 24px;
-  height: 24px;
-}
-.about-divs .item p {
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.44px;
-}
-
-.clothes-cards {
-  padding: 30px 0;
-}
-.clothes-cards .clothes-container h4 {
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-  margin-bottom: 20px;
-}
-.clothes-cards .clothes-all-cards .item {
-  margin-left: auto;
-  margin-right: auto;
-  width: 264px;
-  height: 522px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  background: #FFF;
-}
-.clothes-cards .owl-carousel .owl-item .clothes-card-text {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 4px;
-}
-.clothes-cards .owl-carousel .owl-item .clothes-card-text img {
-  width: 98px;
-  height: 20px;
-}
-.clothes-cards .owl-carousel .owl-item .clothes-card-text .card-btn {
-  padding: 8px 24px;
-  border-radius: 6px;
-  background: var(--gold, #FFC000);
-}
-.clothes-cards .owl-carousel .owl-item .clothes-card-text h5 {
-  color: var(--black, #000);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-}
-.clothes-cards .owl-carousel .owl-item .clothes-card-text p {
-  color: black;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.4px;
-}
-
-.species {
-  padding: 30px 0;
-}
-.species h4 {
-  margin-bottom: 40px;
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-}
-.species .species-container .item {
-  width: 264px;
-  height: 352px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.species .species-container .item:hover .species-cards {
-  height: 80%;
-}
-.species .species-container .species-cards {
-  height: 100%;
-  height: 100%;
-  transition: 1s;
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-}
-.species .species-container .owl-carousel .owl-item img {
-  width: 264px;
-}
-.species .species-container .species-card-hover {
-  height: 20%;
-  border-radius: 0px 0px 8px 8px;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.species .species-container .species-card-hover h5 {
-  color: #FFC000;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-}
-
-.download {
-  padding: 40px 0;
-  margin-top: 200px;
-  background: radial-gradient(1075.73% 141.42% at 0% 0%, #0F0D2B 0%, #0C0926 100%);
-}
-.download-container {
-  position: relative;
-  display: flex;
-  justify-content: end;
-}
-.download-container .download-img {
-  position: absolute;
-  right: auto;
-  left: 0;
-  margin-top: -220px;
-}
-.download-container .download-text {
-  max-width: 754px;
-}
-.download-container .download-text h4 {
-  color: white;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-}
-.download-container .download-text p {
-  color: white;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.44px;
-  margin-top: 24px;
-  margin-bottom: 40px;
-}
-.download-container .download-text .socials-download {
-  display: flex;
-  gap: 31px;
-}
-@media (max-width: 410px) {
-  .download-container .download-text .socials-download {
-    flex-direction: column;
-  }
-}
-@media (max-width: 1200px) {
-  .download {
-    padding-top: 300px;
-  }
-  .download .download-img {
-    top: -300px;
-    right: 0;
-    left: 0;
-  }
-  .download .download-container {
-    justify-content: start;
-  }
-}
-
-.imperia .container-imperia {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width: 1100px) {
-  .imperia .container-imperia {
-    grid-template-columns: 1fr;
-  }
-}
-.imperia .container-img img {
-  width: 100%;
-}
-.imperia .container-text {
-  padding: 20px;
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 24px;
-}
-.imperia .container-text h4 {
-  max-width: 556px;
-  color: black;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
-}
-.imperia .container-text p {
-  max-width: 556px;
-  color: black;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.44px;
-}
-.imperia .container-text button {
-  padding: 8px 24px;
-  border-radius: 6px;
-  background: var(--gold, #FFC000);
-}
-
-.discount {
-  margin: 40px 0;
-  background-color: #FFC000;
-  padding: 173px 0;
-}
-.discount-container h4 {
-  max-width: 666px;
-  margin-left: auto;
-  margin-right: auto;
-  color: black;
-  text-align: center;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.25px;
+  padding-top: 140px;
 }

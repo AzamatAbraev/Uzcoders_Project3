@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url(../_global.scss);
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/inter/Inter-Regular.ttf);
+}
 footer {
   padding: 40px;
 }
@@ -22,7 +55,7 @@ footer {
   margin-bottom: 30px;
 }
 .container .footer-texts div h5 {
-  color: black;
+  color: #000;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -30,12 +63,12 @@ footer {
   letter-spacing: 0.75px;
   text-transform: uppercase;
 }
-.container .footer-texts div p {
-  color: black;
+.container .footer-texts div .footer__link {
+  color: #000;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 400;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
   letter-spacing: 0.25px;
 }
 .container .footer-texts div img {

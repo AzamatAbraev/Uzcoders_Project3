@@ -1,29 +1,28 @@
 @use "../base/typography" as typo;
 @import url(../_global.scss);
 
-footer{
+footer {
   padding: 40px;
 }
 
-.container{
+.container {
   max-width: 1190px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px ;
 
-  .footer-texts{
+  .footer-texts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-
-    div{
+    div {
       display: flex;
       flex-direction: column;
       row-gap: 20px;
       padding: 20px;
       margin-bottom: 30px;
-      h5{
-        color:black;
+      h5 {
+        color: #000;
         font-size: 14px;
         font-family: typo.$font-family;
         font-weight: 600;
@@ -32,25 +31,25 @@ footer{
         text-transform: uppercase;
       }
 
-      p{
-        color: black;
+      .footer__link {
+        color: #000;
         font-size: 14px;
         font-family: typo.$font-family;
         font-weight: 400;
-        line-height: 160%; /* 22.4px */
+        line-height: 160%;
         letter-spacing: 0.25px;
       }
 
-      img{
+      img {
         width: 96px;
         height: 96px;
       }
     }
 
-    @media(max-width:1250px){
+    @media (max-width: 1250px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media(max-width:550px){
+    @media (max-width: 550px) {
       grid-template-columns: 1fr;
     }
   }
