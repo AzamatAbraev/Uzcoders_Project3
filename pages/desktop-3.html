@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/header.min.css" />
+  <link rel="stylesheet" href="../css/footer.min.css" />
+  <link rel="stylesheet" href="../css/desktop-2.min.css">
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Категории</a>
+      <a href="#">Сотрудничество</a>
+    </div>
+  </div>
+  <header>
+    <nav>
+      <div id="launguage" class="navbar-laung">
+        <div class="container">
+          <div class="launguage">
+            <a href="#" class="a-active">RU</a>
+            <a href="#">UZ</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="container">
+          <div id="navbar" class="nav-menu">
+            <h4>MILANDI</h4>
+            <div class="nav-links">
+              <a href="#">Главная</a>
+              <a href="#">О нас</a>
+              <a href="#">Категории</a>
+              <a href="#">Сотрудничество</a>
+            </div>
+            <div class="nav-btns">
+              <button class="nav-btn-1">Войти</button>
+              <button class="nav-btn-1">Зарегистрироваться</button>
+              <button class="nav-btn-2"><img src="../images/header/shop.svg" alt=""></button>
+            </div>
+          </div>
+          <button onclick="openNav()"><img src="../images/header/" alt=""><img src="../images/header/menu-hamburger.png"
+              alt=""></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="close">
+      <div class="container">
+        <div>
+          <h1 class="pt-52 pb-16 text-center text-4xl font-mono leading-10 font-bold">Вход</h1>
+        </div>
+        <div class="grid lg:grid-cols-2 items-center">
+          <div class="grid-cols-1">
+            <img class="w-full" src="../images/Desktop-2/undraw_Login_re_4vu2 1.png" alt="">
+          </div>
+          <div class="grid-cols-2">
+            <input class="border pl-6 w-3/4 h-12 ml-14 mt-14 rounded-lg" type="text" placeholder="Имя">
+            <input class="border pl-6 w-3/4 h-12 ml-14 mt-4 rounded-lg" type="text" placeholder="Номер телефона">
+            <input class="border pl-6 w-3/4 h-12 ml-14 mt-4 rounded-lg" type="text" placeholder="Адрес">
+            <input class="border pl-6 w-3/4 h-12 ml-14 mt-4 rounded-lg" type="text" placeholder="E-mail">
+            <h3 class=" pt-4 pb-4 text-base font-mono ml-14 leading-6 font-bold">Пароль</h3>
+            <input class="border pl-6 w-3/4 h-12 ml-14  rounded-lg" type="password" placeholder="Password">
+            <button
+              class="text-xl not-italic font-bold ml-14 mt-5 rounded-lg bg-gray-100 p-3 px-16  transition duration-500 hover:bg-yellow-500 sm:px-20">Войти</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-texts">
+        <div>
+          <h5>про imperia</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+            pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+          </p>
+          <img src="../images/header/footer-logo.svg" alt="">
+        </div>
+        <div>
+          <h5>контакты</h5>
+          <p>+998 90 958 78 87</p>
+          <p>support@fonon.uz</p>
+          <h5>рабочее время</h5>
+          <p>По будням 9:00 to 18:00</p>
+          <p>В выходные 11:00 to 18:00</p>
+        </div>
+        <div>
+          <h5>Меню</h5>
+          <p>Главная</p>
+          <p>О нас</p>
+          <p>Категории</p>
+          <p>Сотрудничество</p>
+        </div>
+        <div>
+          <h5>категории</h5>
+          <p>Женская одежда</p>
+          <p>Мужская одежда</p>
+          <p>Детская одежда</p>
+          <p>Обувь</p>
+          <p>Сумки</p>
+          <p>Аксесуары</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/header.js"></script>
+</body>
+
+</html>
