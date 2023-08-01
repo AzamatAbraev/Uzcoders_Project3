@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
+=======
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
@@ -54,14 +72,39 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Montserrat";
+<<<<<<< HEAD
+button {
+  cursor: pointer;
+  border: none;
 }
 
 input:focus {
   outline: none;
 }
 
+=======
+>>>>>>> f75cd815da9b9df55f3083ca9fc5fe4b3ab64aa4
+body {
+  font-family: "Montserrat";
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+<<<<<<< HEAD
+h1 {
+  color: aqua;
+  background-color: bisque;
+=======
 nav {
   position: fixed;
   width: 100%;
@@ -73,7 +116,7 @@ nav {
 
 .overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -212,7 +255,7 @@ footer {
   margin-bottom: 30px;
 }
 .container .footer-texts div h5 {
-  color: #000;
+  color: var(--black, #000);
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -220,8 +263,8 @@ footer {
   letter-spacing: 0.75px;
   text-transform: uppercase;
 }
-.container .footer-texts div .footer__link {
-  color: #000;
+.container .footer-texts div p {
+  color: var(--black, #000);
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -241,6 +284,10 @@ footer {
   .container .footer-texts {
     grid-template-columns: 1fr;
   }
+}
+
+.container {
+  padding: 0 20px;
 }
 
 main {
